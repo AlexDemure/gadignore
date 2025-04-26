@@ -51,6 +51,7 @@ __snapshots__/
 .env.*
 .env.docker
 .envrc
+.venv
 .gitpod/
 .idea/
 .pydevproject
@@ -75,6 +76,8 @@ eggs/
 env/
 env.bak/
 ENV/
+venv/
+VENV/
 htmlcov/
 instance/
 lib/
