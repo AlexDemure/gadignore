@@ -5,13 +5,17 @@ with open("requirements.txt") as f:
 
 setup(
     name="gadignore",
-    version="0.0.1",
+    version="0.0.2",
     packages=find_packages(),
     package_data={
         "gadignore": [".gitignore"],
     },
     install_requires=requirements,
-    entry_points={},
+    entry_points={
+        "console_scripts": [
+            "gadignore=gadignore.cli:app",
+        ],
+    },
     author="Alexander Grishchenko",
     author_email="alexanderdemure@gmail.com",
     description="CLI tool for quickly generating a .gitignore file for Python projects",
